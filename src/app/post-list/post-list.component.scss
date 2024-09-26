@@ -1,0 +1,27 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 5px;
+}
+small {
+  color: #666;
+}
+.post-actions {
+  margin-top: 10px;
+}
+.like-button {
+  background-color: #4267B2;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.like-button:hover {
+  background-color: #365899;
+}

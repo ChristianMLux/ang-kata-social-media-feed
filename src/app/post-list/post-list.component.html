@@ -1,0 +1,18 @@
+@if (posts().length) {
+  <ul>
+    @for (post of posts(); track post.id) {
+      <li>
+        <p>{{ post.content }}</p>
+        <small>Gepostet von {{ post.author }} am {{ post.createdAt | date:'short' }}</small>
+        <div class="post-actions">
+          <button (click)="likePost(post.id)" class="like-button">
+            👍 {{ post.likes }}
+          </button>
+        </div>
+        <app-comment-list [postId]="post.id"></app-comment-list>
+      </li>
+    }
+  </ul>
+} @else {
+  <p>Noch keine Posts vorhanden.</p>
+}

@@ -1,0 +1,29 @@
+div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin: 20px auto;
+}
+textarea {
+  padding: 8px;
+}
+button {
+  padding: 8px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+small {
+  color: #666;
+  align-self: flex-end;
+}
+a {
+  color: blue;
+  cursor: pointer;
+}

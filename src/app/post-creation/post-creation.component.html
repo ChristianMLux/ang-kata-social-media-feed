@@ -1,0 +1,9 @@
+@if (authService.isLoggedIn()) {
+  <div>
+    <textarea [(ngModel)]="content" (ngModelChange)="updateContent($event)" placeholder="Was möchten Sie teilen? (max. 250 Zeichen)" maxlength="250"></textarea>
+    <small>{{contentLength()}}/250 Zeichen</small>
+    <button (click)="createPost()" [disabled]="!isValid()">Post erstellen</button>
+  </div>
+} @else {
+  <p>Bitte <a (click)="navigateToLogin()">melden Sie sich an</a>, um einen Post zu erstellen.</p>
+}
